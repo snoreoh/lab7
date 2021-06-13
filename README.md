@@ -8,6 +8,7 @@ $ wget https://raw.githubusercontent.com/cpp-pm/gate/master/cmake/HunterGate.cma
   2. Таким образом, в папку cmake загружается файл HunterGate.cmake.
   
   3. Потом изменяем CMakeLists.txt таким образом:
+  
 ```
 include("cmake/HunterGate.cmake")
 
