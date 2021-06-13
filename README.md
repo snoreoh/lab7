@@ -3,8 +3,10 @@
 # Homework. Lab #7
 
   1. Чтобы настроить Hunter-пакет для solver'a мне необходимо сначала создать в папке проекта папку СМаke и из нее прописать команду ```
-$wget https://raw.githubusercontent.com/cpp-pm/gate/master/cmake/HunterGate.cmake -O СМake/HunterGate.cmake```
+$ wget https://raw.githubusercontent.com/cpp-pm/gate/master/cmake/HunterGate.cmake -O СМake/HunterGate.cmake```
+  
   2. Таким образом, в папку cmake загружается файл HunterGate.cmake.
+  
   3. Потом изменяем CMakeLists.txt таким образом:
 ```
 include("cmake/HunterGate.cmake")
@@ -22,6 +24,7 @@ find_package(Boost CONFIG REQUIRED)
 
 target_link_libraries(solver PUBLIC Boost::boost solver_lib formatter_ex)
 ```
+  
   4. Затем создаём файл .travis.yml:
 ```
 language: cpp
